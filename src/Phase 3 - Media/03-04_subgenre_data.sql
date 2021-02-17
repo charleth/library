@@ -103,7 +103,7 @@ INSERT INTO subgenre VALUES
 );
 
 /* show genres and their subgenres */
-SELECT genre.title AS Genre, subgenre.title AS Subgenre
+SELECT genre.genre_ID, genre.title AS Genre, subgenre.subgenre_ID, subgenre.title AS Subgenre
 FROM genre, subgenre
 WHERE genre.genre_ID = subgenre.genre_ID;
 

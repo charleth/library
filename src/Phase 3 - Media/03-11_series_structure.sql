@@ -1,0 +1,9 @@
+USE library;
+
+DROP TABLE IF EXISTS series;
+
+CREATE TABLE series
+(
+    series_ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(50)
+);

@@ -1,0 +1,9 @@
+USE library;
+
+DROP TABLE IF EXISTS media;
+
+CREATE TABLE media
+(
+    media_ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(15)
+);
