@@ -41,3 +41,8 @@ INSERT INTO shelf VALUES
     'Cybersecurity',
     3
 );
+
+select designation as 'Regal',
+       room.title as 'Raum'
+       from shelf, room
+    WHERE shelf.room_ID = room.room_ID;
