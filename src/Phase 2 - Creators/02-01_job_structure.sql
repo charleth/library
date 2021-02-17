@@ -1,0 +1,10 @@
+USE library;
+
+DROP TABLE IF EXISTS job;
+
+CREATE TABLE job
+(
+    job_ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(40)#,
+    #ordinal INTEGER(2)
+);

@@ -1,0 +1,9 @@
+USE library;
+
+DROP TABLE IF EXISTS genre;
+
+CREATE TABLE genre
+(
+    genre_ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(40)
+);
