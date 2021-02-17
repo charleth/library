@@ -106,3 +106,8 @@ INSERT INTO subgenre VALUES
 SELECT genre.title AS Genre, subgenre.title AS Subgenre
 FROM genre, subgenre
 WHERE genre.genre_ID = subgenre.genre_ID;
+
+SELECT subgenre.title AS 'Computer Technology: Subgenres'
+    FROM genre, subgenre
+    WHERE genre.genre_ID = subgenre.genre_ID AND
+          genre.title = 'computer technology';
