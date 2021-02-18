@@ -1,0 +1,9 @@
+USE library;
+
+DROP TABLE IF EXISTS email;
+
+CREATE TABLE email
+(
+    email_ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR (40)
+);
