@@ -16,7 +16,7 @@ INSERT INTO exemplar VALUES
 (
     NULL,
     2,
- 2,
+    2,
     1
 ),
 (

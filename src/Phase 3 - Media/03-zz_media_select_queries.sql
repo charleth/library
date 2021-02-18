@@ -1,10 +1,14 @@
 USE library;
 
 /* show genres and their subgenres */
-SELECT genre.genre_ID, genre.title AS Genre, subgenre.subgenre_ID, subgenre.title AS Subgenre
+SELECT genre.genre_ID,
+       genre.title AS Genre,
+       subgenre.subgenre_ID,
+       subgenre.title AS Subgenre
 FROM genre, subgenre
 WHERE genre.genre_ID = subgenre.genre_ID;
 
+# Show Subgenres for 'Computer Technology'
 SELECT subgenre.title AS 'Computer Technology: Subgenres'
 FROM genre, subgenre
 WHERE genre.genre_ID = subgenre.genre_ID AND
@@ -13,10 +17,10 @@ WHERE genre.genre_ID = subgenre.genre_ID AND
 # Show number of copies, available languages and formats for each Book
 SELECT
     works.title AS 'Title',
-    GROUP_CONCAT(DISTINCT CONCAT(creator.firstname, ' ', creator.lastname)) AS 'Author(s)',
+    GROUP_CONCAT(CONCAT(creator.firstname, ' ', creator.lastname)) AS 'Author(s)',
     GROUP_CONCAT(DISTINCT languages.language) AS 'Languages',
     GROUP_CONCAT(DISTINCT formatting.designation) AS 'Formats',
-    COUNT(exemplar.exemplar_ID) AS 'Copies available'
+    COUNT(DISTINCT exemplar.exemplar_ID) AS 'Copies available'
 
 FROM works, languages, formatting, creatorworks
     LEFT JOIN exemplar
