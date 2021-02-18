@@ -1,14 +1,11 @@
 USE library;
 
-select * from genre;
-
 INSERT INTO works VALUES
 (
     NULL,
     'Pet Sematary',
     NULL,
     NULL,
-    1,
     NULL,
     14,
     NULL
@@ -18,7 +15,6 @@ INSERT INTO works VALUES
     'The Hobbit',
     NULL,
     NULL,
-    2,
     NULL,
     12,
     20
@@ -28,7 +24,6 @@ INSERT INTO works VALUES
     'Waiting for Godot',
     NULL,
     NULL,
-    3,
     NULL,
     4,
     7
@@ -38,7 +33,6 @@ INSERT INTO works VALUES
     'Romeo and Juliet',
     NULL,
     NULL,
-    5,
     NULL,
     4,
     6
@@ -48,7 +42,15 @@ INSERT INTO works VALUES
     'Wyrd Sisters',
     NULL,
     1,
-    4,
+    NULL,
+    12,
+    NULL
+),
+(
+    NULL,
+    'Good Omens',
+    'The Nice and Accurate Prophecies of Agnes Nutter',
+    NULL,
     NULL,
     12,
     NULL

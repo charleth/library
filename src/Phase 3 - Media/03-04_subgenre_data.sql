@@ -101,13 +101,3 @@ INSERT INTO subgenre VALUES
     'high fantasy',
     12
 );
-
-/* show genres and their subgenres */
-SELECT genre.genre_ID, genre.title AS Genre, subgenre.subgenre_ID, subgenre.title AS Subgenre
-FROM genre, subgenre
-WHERE genre.genre_ID = subgenre.genre_ID;
-
-SELECT subgenre.title AS 'Computer Technology: Subgenres'
-    FROM genre, subgenre
-    WHERE genre.genre_ID = subgenre.genre_ID AND
-          genre.title = 'computer technology';

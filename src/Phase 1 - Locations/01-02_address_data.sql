@@ -2,9 +2,9 @@ USE library;
 
 INSERT INTO address VALUES(
     NULL,
-    'Main Street',
+    'Imagination Avenue',
     '12b',
     '12034',
-    'London',
-    'United Kingdom'
+    'Anywhere',
+    'Fantasia'
 );

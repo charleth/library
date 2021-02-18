@@ -35,4 +35,9 @@ INSERT INTO creator VALUES
     NULL,
     'Jane',
     'Austen'
+),
+(
+    NULL,
+    'Neil',
+    'Gaiman'
 );
